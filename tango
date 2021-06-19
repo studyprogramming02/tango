@@ -1,4 +1,6 @@
-from tkinter import messagebox
-ret = messagebox.askyesno('確認', 'ウィンドウを閉じますか？')
-if ret == True:
-    sys.exit()
+import pandas as pd
+import os
+
+tango_csv = 'C:/Users/jumpe/myfile/babys/Python/tango/tango.csv'
+df = pd.read_csv(tango_csv,encoding='shift-jis')
+print(df)   
