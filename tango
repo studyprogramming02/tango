@@ -1,0 +1,4 @@
+from tkinter import messagebox
+ret = messagebox.askyesno('確認', 'ウィンドウを閉じますか？')
+if ret == True:
+    sys.exit()
